@@ -1,4 +1,4 @@
-# edu-login-provider
+# Login-provider
 
 ## Login Context
 
