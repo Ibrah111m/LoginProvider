@@ -56,6 +56,7 @@
     npm run lint
     ```
 
+
 ## Login Context
 
 ```mermaid
@@ -68,6 +69,10 @@ stateDiagram-v2
     Error --> Unauthenticated: Retry
     Error --> Authenticating: Enter credentials again
 ```
+
+## Login Process
+
+```mermaid
 sequenceDiagram
     participant User
     participant Login
@@ -95,6 +100,8 @@ sequenceDiagram
     Fetcher->>+Viewer: Pass data
     Viewer-->>-User: Display data
 ```
+
+# LoginProvider
 
 ## App Flow Diagram
 
