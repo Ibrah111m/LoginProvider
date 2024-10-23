@@ -105,7 +105,7 @@ sequenceDiagram
 
 ## App Flow Diagram
 
-![App Flow Diagram](./assets/diagram.png)
+![App Flow Diagram](/assets/diagram.png)
 
 ## Komponenter i Storybook
 
