@@ -67,10 +67,10 @@ stateDiagram-v2
     Authenticated --> Unauthenticated: Logout
     Error --> Unauthenticated: Retry
     Error --> Authenticating: Enter credentials again
-```
+
 
     
-sequenceDiagram
+    sequenceDiagram
     participant User
     participant Login
     participant LoginProvider as Login Provider
@@ -96,3 +96,4 @@ sequenceDiagram
     LoginProvider-->>-Fetcher: Update state (data)
     Fetcher->>+Viewer: Pass data
     Viewer-->>-User: Display data
+```
