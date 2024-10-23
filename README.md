@@ -67,7 +67,7 @@ stateDiagram-v2
     Authenticated --> Unauthenticated: Logout
     Error --> Unauthenticated: Retry
     Error --> Authenticating: Enter credentials again
-
+```
 
     
 sequenceDiagram
