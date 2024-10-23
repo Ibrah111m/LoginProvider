@@ -67,10 +67,8 @@ stateDiagram-v2
     Authenticated --> Unauthenticated: Logout
     Error --> Unauthenticated: Retry
     Error --> Authenticating: Enter credentials again
-
-
-    
-    sequenceDiagram
+```
+sequenceDiagram
     participant User
     participant Login
     participant LoginProvider as Login Provider
@@ -97,3 +95,21 @@ stateDiagram-v2
     Fetcher->>+Viewer: Pass data
     Viewer-->>-User: Display data
 ```
+
+## App Flow Diagram
+
+![App Flow Diagram](./assets/diagram.png)
+
+## Komponenter i Storybook
+
+### Följande komponenter kan testas i Storybook:
+
+- **LoginPage.stories.jsx** – Testar `LoginPage`-komponenten
+- **UserAtom.stories.jsx** – Testar `UserAtom`-komponenten
+- **PasswordAtom.stories.jsx** – Testar `PasswordAtom`-komponenten
+- **LoginOrganism.stories.jsx** – Testar en organism med flera inloggningskomponenter
+- **ProfileOrganism.stories.jsx** – Testar profilkomponenten
+
+## Licens
+
+Detta projekt är licensierat under MIT-licensen.
